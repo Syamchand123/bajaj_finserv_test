@@ -1,0 +1,98 @@
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+10:56:33.543 [main] INFO  c.e.w.WebhookSqlSolverApplication - Starting WebhookSqlSolverApplication using Java 17.0.8.1 with PID 34204 (G:\bajaj\webhook-sql-solver\target\classes started by SivaS in G:\bajaj\webhook-sql-solver)
+10:56:33.548 [main] INFO  c.e.w.WebhookSqlSolverApplication - No active profile set, falling back to 1 default profile: "default"
+10:56:34.310 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+10:56:34.327 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:56:34.327 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+10:56:34.411 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:56:34.411 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 824 ms
+10:56:34.679 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+10:56:34.689 [main] INFO  c.e.w.WebhookSqlSolverApplication - Started WebhookSqlSolverApplication in 1.488 seconds (process running for 1.839)
+10:56:34.689 [main] INFO  c.e.w.config.StartupConfig - Application started - executing webhook flow...
+10:56:34.689 [main] INFO  c.e.w.service.WebhookService - Starting webhook flow...
+10:56:34.696 [main] INFO  c.e.w.service.WebhookService - Sending webhook generation request to: https://bfhldevapigw.healthrx.co.in/hiring/generateWebhook/JAVA
+10:56:34.770 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST https://bfhldevapigw.healthrx.co.in/hiring/generateWebhook/JAVA
+10:56:34.800 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+10:56:34.812 [main] DEBUG o.s.web.client.RestTemplate - Writing [com.example.webhooksqlsolver.dto.WebhookRequest@127705e4] as "application/json"
+10:56:35.065 [main] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+10:56:35.065 [main] DEBUG o.s.web.client.RestTemplate - Reading to [com.example.webhooksqlsolver.dto.WebhookResponse]
+10:56:35.070 [main] INFO  c.e.w.service.WebhookService - Webhook generation successful
+10:56:35.070 [main] INFO  c.e.w.service.WebhookService - Webhook generated successfully
+10:56:35.070 [main] INFO  c.e.w.service.WebhookService - Webhook URL: https://bfhldevapigw.healthrx.co.in/hiring/testWebhook/JAVA
+10:56:35.070 [main] INFO  c.e.w.service.WebhookService - SQL problem solved for regNo: REG12347
+10:56:35.070 [main] INFO  c.e.w.service.WebhookService - Submitting solution to webhook URL: https://bfhldevapigw.healthrx.co.in/hiring/testWebhook/JAVA
+10:56:35.070 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST https://bfhldevapigw.healthrx.co.in/hiring/testWebhook/JAVA
+10:56:35.070 [main] DEBUG o.s.web.client.RestTemplate - Accept=[text/plain, application/json, application/*+json, */*]
+10:56:35.070 [main] DEBUG o.s.web.client.RestTemplate - Writing [com.example.webhooksqlsolver.dto.SqlSolutionRequest@5f34907b] as "application/json"
+10:56:35.111 [main] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+10:56:35.121 [main] DEBUG o.s.web.client.RestTemplate - Reading to [java.lang.String] as "application/json"
+10:56:35.122 [main] INFO  c.e.w.service.WebhookService - Solution submitted successfully. Response: {"success":true,"message":"Webhook processed successfully"}
+10:56:35.123 [main] INFO  c.e.w.service.WebhookService - Webhook flow completed successfully
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  06:41 min
+[INFO] Finished at: 2025-08-29T11:01:36+05:30
+[INFO] ------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+11:03:03.308 [main] INFO  c.e.w.WebhookSqlSolverApplication - Starting WebhookSqlSolverApplication v1.0.0 using Java 17.0.8.1 with PID 24748 (G:\bajaj\webhook-sql-solver\target\webhook-sql-solver-1.0.0.jar started by SivaS in G:\bajaj\webhook-sql-solver)
+11:03:03.314 [main] INFO  c.e.w.WebhookSqlSolverApplication - No active profile set, falling back to 1 default profile: "default"
+11:03:04.735 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11:03:04.748 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:03:04.748 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+11:03:04.824 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:03:04.827 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1403 ms
+11:03:05.359 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+11:03:05.375 [main] INFO  c.e.w.WebhookSqlSolverApplication - Started WebhookSqlSolverApplication in 2.833 seconds (process running for 3.39)
+11:03:05.376 [main] INFO  c.e.w.config.StartupConfig - Application started - executing webhook flow...
+11:03:05.376 [main] INFO  c.e.w.service.WebhookService - Starting webhook flow...
+11:03:05.379 [main] INFO  c.e.w.service.WebhookService - Sending webhook generation request to: https://bfhldevapigw.healthrx.co.in/hiring/generateWebhook/JAVA
+11:03:05.479 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST https://bfhldevapigw.healthrx.co.in/hiring/generateWebhook/JAVA
+11:03:05.527 [main] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+11:03:05.539 [main] DEBUG o.s.web.client.RestTemplate - Writing [com.example.webhooksqlsolver.dto.WebhookRequest@4baed682] as "application/json"
+11:03:05.766 [main] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+11:03:05.769 [main] DEBUG o.s.web.client.RestTemplate - Reading to [com.example.webhooksqlsolver.dto.WebhookResponse]
+11:03:05.779 [main] INFO  c.e.w.service.WebhookService - Webhook generation successful
+11:03:05.779 [main] INFO  c.e.w.service.WebhookService - Webhook generated successfully
+11:03:05.779 [main] INFO  c.e.w.service.WebhookService - Webhook URL: https://bfhldevapigw.healthrx.co.in/hiring/testWebhook/JAVA
+11:03:05.779 [main] INFO  c.e.w.service.WebhookService - SQL problem solved for regNo: REG12347
+11:03:05.781 [main] INFO  c.e.w.service.WebhookService - Submitting solution to webhook URL: https://bfhldevapigw.healthrx.co.in/hiring/testWebhook/JAVA
+11:03:05.781 [main] DEBUG o.s.web.client.RestTemplate - HTTP POST https://bfhldevapigw.healthrx.co.in/hiring/testWebhook/JAVA
+11:03:05.781 [main] DEBUG o.s.web.client.RestTemplate - Accept=[text/plain, application/json, application/*+json, */*]
+11:03:05.782 [main] DEBUG o.s.web.client.RestTemplate - Writing [com.example.webhooksqlsolver.dto.SqlSolutionRequest@1c93b51e] as "application/json"
+11:03:05.826 [main] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+11:03:05.827 [main] DEBUG o.s.web.client.RestTemplate - Reading to [java.lang.String] as "application/json"
+11:03:05.828 [main] INFO  c.e.w.service.WebhookService - Solution submitted successfully. Response: {"success":true,"message":"Webhook processed successfully"}
+11:03:05.828 [main] INFO  c.e.w.service.WebhookService - Webhook flow completed successfully
